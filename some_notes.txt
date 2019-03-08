@@ -4,3 +4,10 @@ sftp {user}@{host}:{remoteFileName} {localFileName}
 Upload a single file from your machine to a remote ftp server:
 
 sftp {user}@{host}:{remote_dir} <<< $'put {local_file_path}'
+
+
+
+If you have Ubuntu 16.04 LTS, you can enable mongo to start on boot typing this in your console: 
+sudo systemctl enable mongod
+I have used this approach with MongoDB Community Edition 3.6 and it works. Reboot your machine and test if mongo is running typing: 
+sudo service mongod status
