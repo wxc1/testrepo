@@ -1,3 +1,5 @@
+systemctl reset-failed
+
 Download a single file from a remote ftp server to your machine:
 
 sftp {user}@{host}:{remoteFileName} {localFileName}
