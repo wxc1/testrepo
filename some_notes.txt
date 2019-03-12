@@ -5,7 +5,10 @@ Upload a single file from your machine to a remote ftp server:
 
 sftp {user}@{host}:{remote_dir} <<< $'put {local_file_path}'
 
+You may simply use %3N to truncate the nanoseconds to the 3 most significant digits:
 
+$ date +"%Y-%m-%d %H:%M:%S,%3N"
+2014-01-08 16:00:12,746
 
 If you have Ubuntu 16.04 LTS, you can enable mongo to start on boot typing this in your console: 
 sudo systemctl enable mongod
